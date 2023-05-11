@@ -1,0 +1,23 @@
+.about{
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+ 
+}
+
+.about .text{
+    text-align :center;
+    margin: auto;
+    padding: 0.5rem;
+    max-width: 50%;
+
+}
+.about .text p{
+    max-width: 700px;
+}
+
+
