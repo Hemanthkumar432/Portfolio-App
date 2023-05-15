@@ -10,7 +10,7 @@ export const Footer = () => {
                 <div className="location">
                     <FaHome size={20} style={{color :"#fff", margin:"0.5rem"}}/>
                     <div>
-                        <p style={{ fontSize: "1.2rem", margin: 4 }}>Banagalore,India.</p>
+                        <p style={{ fontSize: "1.2rem", margin: 4 }}>Bangalore,India.</p>
                     </div>
                 </div>
                 <div className="phone">
@@ -28,7 +28,7 @@ export const Footer = () => {
             </div>
             <div className="rightbody">
                 <h4>About the Company</h4>
-                <p> I'm Hemanth, the founder of Tech. I'm passionate about exploring new projects and finding creative solutions to complex design challenges. Check out my portfolio to see some of the projects I've worked on. Let's connect and collaborate on your next project!</p>
+                <p> I'm Hemanth,I'm passionate about exploring new projects and finding creative solutions to complex design challenges. Check out my portfolio to see some of the projects I've worked on. Let's connect and collaborate on your next project!</p>
                 <div className="social">
                 <a href="https://twitter.com/hemanthrock432?s=08">
                   <FaTwitter size={30} style={{color :"#fff", margin:"1rem"}} />
