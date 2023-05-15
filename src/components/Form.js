@@ -18,7 +18,7 @@ const Form = () => {
       message
     };
     try {
-      const response = await fetch('http://localhost:9001/form', {
+      const response = await fetch('https://upset-frog-production.up.railway.app/form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -26,9 +26,16 @@ const Form = () => {
         body: JSON.stringify(formData)
       });
       if (response.ok) {
-        alert('Form data submitted successfully');
+        alert('Your data has been submitted successfully. Hemanth will get in touch with you soon. Thank you');
+      } else if (response.status === 500) {
+        const errorData = await response.json();
+        if (errorData.error === 'DuplicateEntryError') {
+          alert('Failed to submit. Some technical issue occurred. Please retry again.');
+        } else {
+          alert('Failed to submit. The record you are trying to create already exists.');
+        }
       } else {
-        alert('Failed to submit form data');
+        alert('Failed to submit. Please retry again.');
       }
     } catch (error) {
       console.error('Error submitting form data:', error);
